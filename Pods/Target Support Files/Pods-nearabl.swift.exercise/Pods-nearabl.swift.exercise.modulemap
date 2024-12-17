@@ -1,0 +1,6 @@
+framework module Pods_nearabl_swift_exercise {
+  umbrella header "Pods-nearabl.swift.exercise-umbrella.h"
+
+  export *
+  module * { export * }
+}
