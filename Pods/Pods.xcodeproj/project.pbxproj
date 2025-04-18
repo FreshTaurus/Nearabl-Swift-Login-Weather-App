@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22F6A46262C2A59486D1354EDFAF04A0 /* Pods-nearabl.swift.exercise-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1BA8361A1F7EE98FEBBFB7AEB350F36 /* Pods-nearabl.swift.exercise-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE8067424CF9D846C575F87E48921A5B /* Pods-nearabl.swift.exercise-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F82ACB16ACBBD7D7FA8C601026FE2C9 /* Pods-nearabl.swift.exercise-dummy.m */; };
-		C95FE137A92CE9D54471917A5C3D9744 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		731E77286774E34FD9068EF15F5BBB0D /* Pods-nearabl.swift.exercise-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F82ACB16ACBBD7D7FA8C601026FE2C9 /* Pods-nearabl.swift.exercise-dummy.m */; };
+		8093743BEC0B4DE44FFED0DA870E675A /* Pods-nearabl.swift.exercise-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1BA8361A1F7EE98FEBBFB7AEB350F36 /* Pods-nearabl.swift.exercise-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E79B76EA23498804EEE2CCDE125B1EF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D93564D0B26EDCF5328DF7529D09048 /* Pods-nearabl.swift.exercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-nearabl.swift.exercise.release.xcconfig"; sourceTree = "<group>"; };
 		30892BCAF1C01311E40B47CCD9AFF171 /* Pods-nearabl.swift.exercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-nearabl.swift.exercise.debug.xcconfig"; sourceTree = "<group>"; };
+		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		72529189AD6B391A90E840B2C05B2951 /* Pods-nearabl.swift.exercise-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-nearabl.swift.exercise-Info.plist"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F82ACB16ACBBD7D7FA8C601026FE2C9 /* Pods-nearabl.swift.exercise-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-nearabl.swift.exercise-dummy.m"; sourceTree = "<group>"; };
 		A1BA8361A1F7EE98FEBBFB7AEB350F36 /* Pods-nearabl.swift.exercise-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-nearabl.swift.exercise-umbrella.h"; sourceTree = "<group>"; };
@@ -27,25 +27,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9FD59B2827DCF1F66AE43D3B195CBB56 /* Frameworks */ = {
+		0BF4B54B9BA6A9FF312CC9565D7ACBDE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C95FE137A92CE9D54471917A5C3D9744 /* Foundation.framework in Frameworks */,
+				E79B76EA23498804EEE2CCDE125B1EF8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		65F3DA295E02D3F69C6CE191DEA7CD1F /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,19 +83,27 @@
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
+				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		E326E0990DBAC5794EFAB6E3DB977F51 /* Headers */ = {
+		0956421584605255789401373A79FC61 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22F6A46262C2A59486D1354EDFAF04A0 /* Pods-nearabl.swift.exercise-umbrella.h in Headers */,
+				8093743BEC0B4DE44FFED0DA870E675A /* Pods-nearabl.swift.exercise-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,12 +112,12 @@
 /* Begin PBXNativeTarget section */
 		3EDBFA60632608051AC542F2726BA968 /* Pods-nearabl.swift.exercise */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 033A3556E8611E5BC300D8D3E1730791 /* Build configuration list for PBXNativeTarget "Pods-nearabl.swift.exercise" */;
+			buildConfigurationList = D7534C576D65462B15846BF87B35B270 /* Build configuration list for PBXNativeTarget "Pods-nearabl.swift.exercise" */;
 			buildPhases = (
-				E326E0990DBAC5794EFAB6E3DB977F51 /* Headers */,
-				EEA9D3378ABA38CCDCC79BEE7DCA6DFA /* Sources */,
-				9FD59B2827DCF1F66AE43D3B195CBB56 /* Frameworks */,
-				14F7558CFC0DC62E229AB44E44F0D6FB /* Resources */,
+				0956421584605255789401373A79FC61 /* Headers */,
+				88C152DE5B544214C04CA9D8FDAFE448 /* Sources */,
+				0BF4B54B9BA6A9FF312CC9565D7ACBDE /* Frameworks */,
+				B632C22562B2CE41676DBB8978C19532 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -134,8 +134,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -147,6 +147,7 @@
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 98F05E543778DEC674CD8751A3E7459D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -157,7 +158,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		14F7558CFC0DC62E229AB44E44F0D6FB /* Resources */ = {
+		B632C22562B2CE41676DBB8978C19532 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -167,20 +168,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EEA9D3378ABA38CCDCC79BEE7DCA6DFA /* Sources */ = {
+		88C152DE5B544214C04CA9D8FDAFE448 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE8067424CF9D846C575F87E48921A5B /* Pods-nearabl.swift.exercise-dummy.m in Sources */,
+				731E77286774E34FD9068EF15F5BBB0D /* Pods-nearabl.swift.exercise-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		3BE5DA0ABC610E1F507B8667D1A5611C /* Release */ = {
+		2B37D14E4860C509C59711D2BA24FDD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D93564D0B26EDCF5328DF7529D09048 /* Pods-nearabl.swift.exercise.release.xcconfig */;
+			baseConfigurationReference = 30892BCAF1C01311E40B47CCD9AFF171 /* Pods-nearabl.swift.exercise.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -192,6 +193,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = "Target Support Files/Pods-nearabl.swift.exercise/Pods-nearabl.swift.exercise-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -210,11 +213,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -344,9 +346,9 @@
 			};
 			name = Release;
 		};
-		AA61C1D89BD7EDAA62D5A4FD1E7395C8 /* Debug */ = {
+		FB924F24DF69910130E503E81BA6CBBD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 30892BCAF1C01311E40B47CCD9AFF171 /* Pods-nearabl.swift.exercise.debug.xcconfig */;
+			baseConfigurationReference = 1D93564D0B26EDCF5328DF7529D09048 /* Pods-nearabl.swift.exercise.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -358,6 +360,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = "Target Support Files/Pods-nearabl.swift.exercise/Pods-nearabl.swift.exercise-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -376,28 +380,29 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		033A3556E8611E5BC300D8D3E1730791 /* Build configuration list for PBXNativeTarget "Pods-nearabl.swift.exercise" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AA61C1D89BD7EDAA62D5A4FD1E7395C8 /* Debug */,
-				3BE5DA0ABC610E1F507B8667D1A5611C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
 				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7534C576D65462B15846BF87B35B270 /* Build configuration list for PBXNativeTarget "Pods-nearabl.swift.exercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B37D14E4860C509C59711D2BA24FDD6 /* Debug */,
+				FB924F24DF69910130E503E81BA6CBBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

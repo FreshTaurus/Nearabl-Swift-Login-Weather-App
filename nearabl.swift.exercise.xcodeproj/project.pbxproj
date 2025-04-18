@@ -14,6 +14,7 @@
 		0634C43C2D122C510016A1C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0634C43B2D122C510016A1C3 /* Assets.xcassets */; };
 		0634C43F2D122C510016A1C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0634C43D2D122C510016A1C3 /* LaunchScreen.storyboard */; };
 		0D2626BD528507996D53FAC2 /* Pods_nearabl_swift_exercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FBB245583D313F8251E7C4 /* Pods_nearabl_swift_exercise.framework */; };
+		F17FB4EA2DB1C35000383DCE /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17FB4E92DB1C35000383DCE /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1CD2EF4789F49FD0A2F65738 /* Pods-nearabl.swift.exercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nearabl.swift.exercise.release.xcconfig"; path = "Target Support Files/Pods-nearabl.swift.exercise/Pods-nearabl.swift.exercise.release.xcconfig"; sourceTree = "<group>"; };
 		79FBB245583D313F8251E7C4 /* Pods_nearabl_swift_exercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nearabl_swift_exercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB4A47EA3F3759292EE6EF70 /* Pods-nearabl.swift.exercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nearabl.swift.exercise.debug.xcconfig"; path = "Target Support Files/Pods-nearabl.swift.exercise/Pods-nearabl.swift.exercise.debug.xcconfig"; sourceTree = "<group>"; };
+		F17FB4E92DB1C35000383DCE /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		0634C4312D122C4E0016A1C3 /* nearabl.swift.exercise */ = {
 			isa = PBXGroup;
 			children = (
+				F17FB4E92DB1C35000383DCE /* WelcomeViewController.swift */,
 				0634C4322D122C4E0016A1C3 /* AppDelegate.swift */,
 				0634C4342D122C4E0016A1C3 /* SceneDelegate.swift */,
 				0634C4362D122C4E0016A1C3 /* ViewController.swift */,
@@ -80,7 +83,6 @@
 				EB4A47EA3F3759292EE6EF70 /* Pods-nearabl.swift.exercise.debug.xcconfig */,
 				1CD2EF4789F49FD0A2F65738 /* Pods-nearabl.swift.exercise.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -121,7 +123,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					0634C42E2D122C4E0016A1C3 = {
 						CreatedOnToolsVersion = 15.2;
@@ -190,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0634C4372D122C4E0016A1C3 /* ViewController.swift in Sources */,
+				F17FB4EA2DB1C35000383DCE /* WelcomeViewController.swift in Sources */,
 				0634C4332D122C4E0016A1C3 /* AppDelegate.swift in Sources */,
 				0634C4352D122C4E0016A1C3 /* SceneDelegate.swift in Sources */,
 			);
@@ -252,6 +255,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = K6GKDAF6TC;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -315,6 +319,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = K6GKDAF6TC;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -344,7 +349,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = K6GKDAF6TC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = nearabl.swift.exercise/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -378,7 +382,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = K6GKDAF6TC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = nearabl.swift.exercise/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
